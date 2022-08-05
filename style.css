@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200;600&family=Poppins:ital,wght@0,500;1,300&family=Red+Rose:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/bg_for_10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+h1{
+    font-size: 50px;
+    width: 528px;
+    margin-top: 160px;
+}
+.container {
+    margin-left: 137px;
+}
+
+button {
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 18px 36px;
+    background: transparent;
+    border: 3px solid wheat;
+    font-weight: 700;
+    font-size: 20px;
+}
+div.one{
+    float: right;
+    margin-top: -337px;
+    margin-right: 187px;
+    width: 269px;
+    height: 150px;
+    padding: 0 15px;
+    background-color: rgba(243, 228, 228, 0.2); 
+}
+
+.two{
+    float: right;
+    width: 254px;
+    height: 150px;
+    margin-left: 685px;
+    margin-top: -88px;
+    position: absolute;
+    padding: 0 15px;
+    background-color: rgba(243, 228, 228, 0.2);
+}
+.para2 {
+    margin-top: 40px;
+    width: 225px;
+}
+.para1 {
+    margin-top: 40px;
+    width: 225px;
+}
+.fa-lightbulb:before {
+    margin-top: 11px;
+    content: "\f0eb";
+    position: absolute;
+}
+.fa-puzzle-piece:before {
+    margin-top: 11px;
+    content: "\f12e";
+    position: absolute;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    margin-top: -22px;
+    margin-left: 15px;
+    position: absolute;
+}
+li {
+    padding: 1px 10px;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 170px;
+    width: 50px;
+}
+.list {
+    margin-top: 35px;
+}
+h5 , h6{
+    display: inline-block;
+}
+.contact{
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 1300px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+    margin-left: 40px;
+}
+
+.number {
+    margin-top: -20px;
+}
+
+.extra {
+    background-color: white;
+    width: 813px;
+    height: 3px;
+    margin-left: 667px;
+    margin-top: -399px;
+    position: absolute;
+}
+
+.blob1{
+    position: absolute;
+    top: 338px;
+    right: 300px;
+    width: 20px;
+    height: 20px;
+}
+.vertical-line {
+    height: 70px;
+    background-color: white;
+    width: 1.5px;
+}
+.circle-top {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: -6px;
+}
+.blob2 {
+    position: absolute;
+    top: 513px;
+    right: 577px;
+    width: 20px;
+    height: 20px;
+}
+
+.horizontal-line {
+    width: 100px;
+    background-color: white;
+    height: 2px;
+}
+.circle-bottom {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 96px;
+    margin-top: -7px;
+}
