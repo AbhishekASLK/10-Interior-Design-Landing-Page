@@ -9,158 +9,307 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(./assets/bg_for_10.jpg);
+    background-image: url(./assets/background.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-.content {
-    line-height: 40px;
+
+/* ---------------------------
+---------NAVBAR-----------
+-------------------------- */
+
+#check , .menu-bar {
+    display: none;
+}
+
+.menu-bar {
+    position: absolute;
+    line-height: 100px;
+    right: 20px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-}
-ul {
-    display: flex;
-    list-style: none;
-}
-h1{
-    font-size: 50px;
-    width: 528px;
-    margin-top: 160px;
-}
-.container {
-    margin-left: 137px;
+    height: 100px;
 }
 
-button {
-    margin-top: 50px;
-    border-radius: 50px;
-    padding: 18px 36px;
-    background: transparent;
-    border: 3px solid wheat;
-    font-weight: 700;
+.nav-left {
+    display: flex;
+    line-height: 100px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 40px;
     font-size: 20px;
 }
-div.one{
-    float: right;
-    margin-top: -337px;
-    margin-right: 187px;
-    width: 269px;
-    height: 150px;
-    padding: 0 15px;
-    background-color: rgba(243, 228, 228, 0.2); 
-}
 
-.two{
-    float: right;
-    width: 254px;
-    height: 150px;
-    margin-left: 685px;
-    margin-top: -88px;
-    position: absolute;
-    padding: 0 15px;
-    background-color: rgba(243, 228, 228, 0.2);
-}
-.para2 {
-    margin-top: 40px;
-    width: 225px;
-}
-.para1 {
-    margin-top: 40px;
-    width: 225px;
-}
-.fa-lightbulb:before {
-    margin-top: 11px;
-    content: "\f0eb";
-    position: absolute;
-}
-.fa-puzzle-piece:before {
-    margin-top: 11px;
-    content: "\f12e";
-    position: absolute;
-}
-
-.fa-phone:before {
-    content: "\f095";
-    margin-top: -22px;
-    margin-left: 15px;
-    position: absolute;
-}
-li {
-    padding: 1px 10px;
-}
-.logo{
-    margin-top: 20px;
-    margin-left: 170px;
-    width: 50px;
-}
-.list {
-    margin-top: 35px;
-}
-h5 , h6{
-    display: inline-block;
-}
-.contact{
-    position: absolute;
-    margin-top: 45px;
-    margin-left: 1300px;
-}
-.block{
+.nav-right {
     display: flex;
-    flex-direction: column;
-    margin-top: -60px;
-    margin-left: 40px;
+    line-height: 100px;
 }
 
-.number {
-    margin-top: -20px;
+.contact {
+    display: flex;
+    margin-right: 40px;
+    font-size: 15px;
 }
 
-.extra {
-    background-color: white;
-    width: 813px;
-    height: 3px;
-    margin-left: 667px;
-    margin-top: -399px;
+.block {
+    display: flex;
+}
+
+.big-line {
     position: absolute;
-}
-
-.blob1{
-    position: absolute;
-    top: 338px;
-    right: 300px;
-    width: 20px;
-    height: 20px;
-}
-.vertical-line {
-    height: 70px;
-    background-color: white;
-    width: 1.5px;
-}
-.circle-top {
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 50px;
-    margin-left: -6px;
-}
-.blob2 {
-    position: absolute;
-    top: 513px;
-    right: 577px;
-    width: 20px;
-    height: 20px;
-}
-
-.horizontal-line {
-    width: 100px;
+    top: 100px;
+    right: 40px;
     background-color: white;
     height: 2px;
+    width: 850px;
 }
-.circle-bottom {
-    width: 15px;
-    height: 15px;
-    background-color: white;
+
+/* --------------------------
+--------- HERO SECTION -----------
+-------------------------- */
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 150px;
+    width: 50%;
+    float: left;
+    gap: 80px;
+}
+
+.left-content h1{
+    font-size: 9vmin;
+}
+
+a.learn-more{
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 25px;
     border-radius: 50px;
-    margin-left: 96px;
-    margin-top: -7px;
+    border: 2px solid white;
 }
+
+/* ---------------------------
+--------- CARDS -----------
+-------------------------- */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin-bottom: 50px;
+}
+
+.card-1 {
+    background: rgb(48,69,86);
+    margin-top: 100px;
+    width: 18rem;
+    height: 9rem;
+    margin-left: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+.card-2 {
+    margin-top: 150px;
+    background: rgb(48,69,86);
+    width: 18rem;
+    height: 9rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: -50px;
+}
+
+.fa-puzzle-piece, .fa-lightbulb {
+    color: black;
+    background-color: #fff;
+    padding: 9px 35px;
+    font-size: 30px;
+    border-radius: 40px;
+    margin-bottom: 8px;
+}
+
+/* ---------------------------
+--------- CREATING A BLOB -----------
+-------------------------- */
+
+.line1{
+    width: 2px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.circle1{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.lines1{
+    position: absolute;
+    top: 46%;
+    right: 16%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.line2{
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.circle2{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.lines2{
+    position: absolute;
+    top: 84%;
+    right: 23%;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ---------------------------
+--------- MOBILE VIEW -----------
+-------------------------- */
+
+@media only screen and (max-width:1160px) {
+
+    .blob {
+        display: none;
+    }
+    
+    li, .contact{
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:960px) {
+    
+    .blob {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .mobile-menu {
+        left: 0;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    li {
+        width: 100%;
+        display: block;
+    }
+
+    li:hover{
+        background-color: #000;
+        color: yellow;
+    }
+
+    body {
+        background-image: none;
+        background-color: #000;
+    }
+
+    .left-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-content h1{
+        width: 100%;
+        margin-top: -100px;
+        font-size: 5vmin;
+        text-align: center;
+        margin-bottom: -60px;
+        padding: 0 5rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a.learn-more{
+        padding: 10px 25px;
+        font-size: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-bottom: 50px;
+    }
+    
+    .card-1 {
+        margin:  30px auto;
+        margin-bottom: 9px;
+    }
+    
+    .card-2 {
+        margin:  1px auto;
+    }
+
+    .fa-puzzle-piece, .fa-lightbulb {
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+
+}
+
