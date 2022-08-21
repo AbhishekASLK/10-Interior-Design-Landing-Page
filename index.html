@@ -9,61 +9,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="content">
-            <div class="logo">
-                <h2>LOGO HERO</h2>
+
+    <!-- --------------------------
+    ---------NAVBAR-----------
+    -------------------------- -->
+
+    <nav>
+        
+        <section class="nav-left">
+            <div>
+                <input type="checkbox" id="check">
             </div>
-            <div class="list">
-                <ul>
-                    <li>About Us</li>
-                    <li>Benefits</li>
-                    <li>Projects</li>
-                    <li>Stages</li>
-                    <li>Services</li>
-                </ul>
-            </div>
+            <label for="check" class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <h1 class="logo">LOGO HERE</h1>
+        </section>
+
+        <section class="nav-right">
+            <ul>
+                <li>About Us</li>
+                <li>Benefits</li>
+                <li>Projects</li>
+                <li>Stages</li>
+                <li>Services</li>
+            </ul>
             <div class="contact">
-                <i class="fa-solid fa-phone"></i>
-                <div class="block">
-                    <h5 class="call">Call Us<h5>
-                    <h6 class="number">+38 (097) 6545 54 34</h6>
+                <div class="call-icon">
+                    <i class="fa-solid fa-phone"></i>
                 </div>
-                
-            </div>
-            <div class="line"></div>
-        </div>
+                <div class="block">
+                    <p class="call">Call Us<p>
+                    <p class="number">+38 (097) 6545 54 34</p>
+                </div>   
+            </div>  
+        </section>
         
     </nav>
 
-    <div class="container">
-        <h1>Interior Design That Care About Details</h1>
-        <button>LEARN MORE</button>
-    </div>
+    <!-- --------------------------
+    --------- LINE -----------
+    -------------------------- -->
+    <div class="big-line"></div>
 
-    <div class="blob1">
-        <div class="vertical-line"></div>
-        <div class="circle-top"></div>
-    </div>
+    <!-- --------------------------
+    --------- HERO SECTION -----------
+    -------------------------- -->
 
-    <div class="one">
-        
-        <div class="icon1"><i class="fa-solid fa-puzzle-piece"></i></div>
-        <div class="para1">
-            We create your space better based on your own idea
+    <section class="hero">
+        <div class="left-content">
+            <h1>Interior Design That Care About Details</h1>
+            <div class="btn">
+                <a href="" class="learn-more">LEARN MORE</a>
+            </div>
+            
         </div>
-    </div>
     
-    <div class="blob2">
-        <div class="horizontal-line"></div>
-        <div class="circle-bottom"></div>
-    </div>
-    <div class="two">
-        <div class="icon2"><i class="fa-regular fa-lightbulb"></i></div>
-        <div class="para2">
-            Innovation ideas, stylish design for home & Bussiness
+    
+        <div class="cards">
+
+            <!-- -----blob----- -->
+
+            <div class="blob">
+                <div class="lines1">
+                    <div class="line1"></div>
+                    <div class="circle1"></div>
+                </div>
+        
+                <div class="lines2">
+                    <div class="line2"></div>
+                    <div class="circle2"></div>
+                </div>
+            </div>
+            
+            <!-- -----card----- -->
+            
+            <div class="card card-1">
+                <div class="icon1">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+                <div class="para1">
+                    We create your space better based on your own idea
+                </div>
+            </div>
+            
+            <div class="card card-2">
+                <div class="icon2">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <div class="para2">
+                    Innovation ideas, stylish design for home & Bussiness
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="extra"></div>
+
+    </section>
+    
+    <script>
+        const menuBtn = document.querySelector('.menu-bar');
+        const navlinks = document.querySelector('ul');
+  
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu');
+        })
+    </script>
+
 </body>
 </html>
