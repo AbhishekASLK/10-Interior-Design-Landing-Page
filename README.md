@@ -1,4 +1,4 @@
-# Interior Design Landing Page-main ![](https://img.shields.io/badge/HTML%20%26%20CSS-Food%20Restaurant%20Home%20Page-blue)
+# Interior Design Landing Page ![](https://img.shields.io/badge/HTML%20%26%20CSS-Food%20Restaurant%20Home%20Page-blue)
 
 ![](https://img.shields.io/badge/TakeOut-How%20to%20create%20blob%20-green)
 
